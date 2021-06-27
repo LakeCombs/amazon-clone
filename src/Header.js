@@ -28,7 +28,10 @@ const Header = () => {
       <div className="header__nav">
         <Link to={!user && "/login"} style={{ textDecoration: "none" }}>
           <div className="header__option" onClick={handleAuthentication}>
-            <span className="header__optionLineOne">{user?.email}</span>
+            <span className="header__optionLineOne">
+              {" "}
+              Hello {!user ? "Guest" : user?.email}
+            </span>
             <span className="header__optionLineTwo">
               {" "}
               {user ? "Sign Out" : "Sign In"}
