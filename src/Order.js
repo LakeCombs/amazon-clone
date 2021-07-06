@@ -2,7 +2,11 @@ import React from "react";
 import "./Order.css";
 
 function Order() {
-  return <div>hello lakes i a the order page</div>;
+  return (
+    <div className="orders">
+      <h1> your orders </h1>
+    </div>
+  );
 }
 
 export default Order;
