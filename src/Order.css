@@ -1,0 +1,27 @@
+.order {
+  padding: 40px;
+  margin: 20px 0;
+  background-color: white;
+  position: relative;
+}
+
+.order_it {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+.order_total {
+  font-weight: 500;
+  text-align: right;
+}
+
+/* orders */
+
+.orders {
+  padding: 20px 80px;
+}
+
+.orders > h1 {
+  margin: 30px 0;
+}
