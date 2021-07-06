@@ -28,6 +28,12 @@ export const reducer = (state, action) => {
         basket: [...state.basket, action.item],
       };
 
+    case "EMPTY_BASKET":
+      return {
+        ...state,
+        basket: [],
+      };
+
     case "REMOVE_FROM_BASKET":
       //this code will remove all the item with the id and that is not what we want
       //in case of we have the same id
@@ -56,6 +62,7 @@ export const reducer = (state, action) => {
         ...state,
         user: action.user,
       };
+
     default:
       return state;
   }
